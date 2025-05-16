@@ -32,8 +32,6 @@ This project is being built using **React + Vite** with **vanilla CSS** for full
 ---
 
 
----
-
 ## 🚀 Deployment Plan
 
 Deployment will be done using GitHub Pages, with a custom domain mapped via DNS. The Vite production build (`npm run build`) will output a static site that is deployable directly via GitHub Actions or manual push to the `gh-pages` branch.
