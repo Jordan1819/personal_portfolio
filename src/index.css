@@ -4,7 +4,7 @@
 
 /* Root Selector for Top Level Styles */
 :root {
-  --dark-gray: #181d25;
+  --dark-gray: #0f131a;
   --light-gray: #797979;
 }
   body {
