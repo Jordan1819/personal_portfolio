@@ -52,5 +52,5 @@ Deployment will be done using GitHub Pages, with a custom domain mapped via DNS.
 
 Feel free to check out my other work or reach out:
 
-- GitHub: [github.com/yourusername](https://github.com/Jordan1819)
+- [My GitHub](https://github.com/Jordan1819)
 - Email: jtw18199@gmail.com
