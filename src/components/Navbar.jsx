@@ -18,17 +18,24 @@ export default function Navbar() {
 
       {/* Full nav menu */}
       <div className={`nav-right ${menuOpen ? 'open' : ''}`}>
-      <a href="index.html">⌂ Home</a>
-      <a href="#">🖳 Projects</a>
-      <a href="#">▤ Resume</a>
-      <a href="https://github.com/jordan1819" target="_blank" rel="noopener noreferrer" className="nav-link githubLink">
-        <span className="githubIconWrapper">
-          <img src="../githubIcon.png" alt="GitHub" className="githubIcon githubIcon--white" />
-          <img src="../githubIconGray.png" alt="GitHub Dark" className="githubIcon githubIcon--dark" />
-        </span> 
-        <span className="githubText">GitHub</span>
+      <a href="index.html"><span>⌂ Home</span></a>
+      <a href="#"><span>🖳 Projects</span></a>
+      <a href="#"><span>▤ Resume</span></a>
+      <a
+        href="https://github.com/jordan1819"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="nav-link githubLink"
+      >
+        <span className="githubLinkContent">
+          <span className="githubIconWrapper">
+            <img src="../githubIcon.png" alt="GitHub" className="githubIcon githubIcon--white" />
+            <img src="../githubIconGray.png" alt="GitHub Dark" className="githubIcon githubIcon--dark" />
+          </span>
+          GitHub
+        </span>
       </a>
-      <a href="#">✉ Contact</a>
+      <a href="#"><span>✉ Contact</span></a>
       {/* <a href="#">✎ Blog</a> */}
       </div>
 

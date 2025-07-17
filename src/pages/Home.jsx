@@ -7,7 +7,7 @@ export default function Home() {
             <main>
                 <h1>Header 1</h1>
                 <h2>Header 2</h2>
-                <p>Explore some shit?</p>
+                <p>Explore some stuff?</p>
             </main>
         </div>
     );
