@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../index.css'
 
 export default function Navbar() {
@@ -18,9 +19,9 @@ export default function Navbar() {
 
       {/* Full nav menu */}
       <div className={`nav-right ${menuOpen ? 'open' : ''}`}>
-      <a href="index.html"><span>⌂ Home</span></a>
-      <a href="#"><span>🖳 Projects</span></a>
-      <a href="#"><span>▤ Resume</span></a>
+      <Link to="/" onClick={() => setMenuOpen(false)}><span>⌂ Home</span></Link>
+      <Link to="/projects" onClick={() => setMenuOpen(false)}><span>🖳 Projects</span></Link>
+      <Link to="/resume" onClick={() => setMenuOpen(false)}><span>▤ Resume</span></Link>
       <a
         href="https://github.com/jordan1819"
         target="_blank"
@@ -35,8 +36,7 @@ export default function Navbar() {
           GitHub
         </span>
       </a>
-      <a href="#"><span>✉ Contact</span></a>
-      {/* <a href="#">✎ Blog</a> */}
+      <Link to="/contact" onClick={() => setMenuOpen(false)}><span>✉ Contact</span></Link>
       </div>
 
     </nav>
