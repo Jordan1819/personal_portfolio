@@ -8,7 +8,7 @@ import Contact from './pages/Contact';
 
 export default function App() {
   return (
-      <Router basename='/personal_portfolio'>
+      <Router>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

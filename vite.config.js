@@ -4,5 +4,6 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/personal-portfolio/',
+  // For GH Pages deployment
+  //base: '/personal-portfolio/',
 })
