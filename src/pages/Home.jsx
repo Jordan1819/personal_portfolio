@@ -16,7 +16,7 @@ import Navbar from "../components/Navbar";
         frameworks (react, android/kotlin, flask)
         tools (git, docker, linux)
     <Featured Projects/ Project Preview>
-        Maybe
+        
     <Resume Callout>
         Call to action to view resume
 */
