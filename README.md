@@ -57,13 +57,13 @@ Feel free to check out my other work or reach out:
 
 ## 📱 Screenshots
 ---
-Basic PC browser view:
+### Basic PC Browser View:
 ![](images/Portfolio1.png)
 
 ---
-Collapsed hamburger menu for mobile view:
+### Collapsed Hamburger Menu for Mobile View:
 ![](images/Portfolio2.png)
 
 ---
-Expanded hamburger menu for mobile view:
+### Expanded Hamburger Menu for Mobile View:
 ![](images/Portfolio3.png)
