@@ -56,9 +56,14 @@ Feel free to check out my other work or reach out:
 ---
 
 ## 📱 Screenshots
+---
 Basic PC browser view:
 ![](images/Portfolio1.png)
+
+---
 Collapsed hamburger menu for mobile view:
 ![](images/Portfolio2.png)
+
+---
 Expanded hamburger menu for mobile view:
 ![](images/Portfolio3.png)
