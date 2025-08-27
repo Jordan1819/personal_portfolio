@@ -31,7 +31,6 @@ This project is being built using **React + Vite** with **vanilla CSS** for full
 
 ---
 
-
 ## 🚀 Deployment Plan
 
 Deployment will be done using GitHub Pages, with a custom domain mapped via DNS. The Vite production build (`npm run build`) will output a static site that is deployable directly via GitHub Actions or manual push to the `gh-pages` branch.
@@ -45,7 +44,6 @@ Deployment will be done using GitHub Pages, with a custom domain mapped via DNS.
 - Customize styles without relying on a framework like Tailwind or Bootstrap
 - Practice deploying modern web apps via GitHub Pages + custom domain
 
-
 ---
 
 ## 📬 Contact
@@ -54,3 +52,9 @@ Feel free to check out my other work or reach out:
 
 - [My GitHub](https://github.com/Jordan1819)
 - Email: jtw18199@gmail.com
+
+---
+
+## 📱 Screenshots
+![](images/Portfolio1.png)
+![](images/Portfolio2.png)
