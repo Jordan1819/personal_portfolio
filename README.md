@@ -11,7 +11,7 @@ The purpose of this project is to:
 - Present my experience as a software engineering and computer science student.
 - Showcase a curated set of technical projects with descriptions and links.
 - Share my resume, skills, and contact information.
-- Optionally host a blog for technical reflections or tutorials.
+- Develop a responsive website that is optimized for PC and smartphone use.
 - Gain practical experience in designing, developing, and deploying a modern frontend app from scratch.
 
 ---
