@@ -88,9 +88,10 @@ export default function Home() {
                         >
                         <ul className="skills-home-card-list">
                             <li><i>Languages:</i> Python, JavaScript, HTML, CSS, SQL, C#, Java</li>
-                            <li><i>Tools:</i> Git, GitHub, Linux, REST APIs, AWS</li>
+                            <li><i>Tools:</i> Git, GitHub, Linux, AWS, Android Studio, Visual Studio Code, Visual Studio</li>
                             <li><i>Networking:</i> Analyzed network traffic by inspecting packet & protocol metadata.</li>
                             <li><i>Systems Programming:</i> Low-level memory and OS inspection, modification, and execution tracing.</li>
+                            <li><i>Applied Mathematics:</i> Study in engineering physics, calculus, linear algebra, and statistics.</li>
                             <li><i>Professional Skills:</i> Excellent technical writing and collaborative communication skills.</li>
                         
                         </ul>
