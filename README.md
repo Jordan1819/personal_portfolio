@@ -56,7 +56,7 @@ Feel free to check out my other work or reach out:
 ---
 
 ## 📱 Screenshots
----
+
 ### Basic PC Browser View:
 ![](images/Portfolio1.png)
 
