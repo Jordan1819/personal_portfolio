@@ -1,18 +1,5 @@
 
-/* Root Selector for Top Level Styles */
-:root {
-  --dark-gray: #0f131a;
-  --light-gray: #797979;
-}
-  body {
-      margin: 0;
-      padding: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      background-color: var(--dark-gray);
-      color: #ffffff;
-  }
-  
-  /**** Navigation Bar ****/
+  /* ============= Navigation Bar Styles ============== */
   nav {
     display: flex;
     justify-content: center;
@@ -103,8 +90,7 @@
   }
   
 
-  /* *********** MOBILE STYLES *********** */
-  /* === Hamburger Menu Styling === */
+/* === Hamburger Icon Styling === */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -117,12 +103,13 @@
   height: 3px;
   background-color: white;
   border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.2s ease;
 }
 
-/* === Mobile styles === */
+/* *********** MOBILE STYLES *********** */
 @media (max-width: 800px) {
   .nav-right {
-    display: none;
+    display: flex;
     flex-direction: column;
     background-color: #080a0d;
     position: absolute;
@@ -130,12 +117,30 @@
     left: 0;
     right: 0;
     text-align: center;
-    padding: 1rem 0;
+    padding: 0;
+
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+
+    transition:
+      max-height 0.3s ease,
+      opacity 0.3s ease,
+      transform 0.3s ease;
+    
     z-index: 10;
   }
 
   .nav-right.open {
-    display: flex;
+    max-height: 500px;
+    opacity: 1;
+    transform: translateY(0);
+    padding: 1rem 0;
+  }
+
+  a {
+    border-top: 1px solid white;
   }
 
   .hamburger {
@@ -145,6 +150,16 @@
     position: absolute;
     left: 2rem;
     
+  }
+
+  .hamburger.open .bar:nth-child(1) {
+    transform: rotate(50deg) translateY(11px);
+  }
+  .hamburger.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.open .bar:nth-child(3) {
+    transform: rotate(-50deg) translateY(-11px);
   }
 
   nav {

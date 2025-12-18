@@ -1,0 +1,8 @@
+.home-card {
+    border-radius: 5px;
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

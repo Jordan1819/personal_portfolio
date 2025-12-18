@@ -1,6 +1,8 @@
+{/* Navbar.jsx */}
+
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import '../index.css'
+import '../../styles/navbar.css';
 
 export default function Navbar() {
 
@@ -11,7 +13,7 @@ export default function Navbar() {
     <nav>
 
       {/* Hamburger Menu */}
-      <div className="hamburger" onClick={toggleMenu}>
+      <div className={`hamburger ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
         <div className="bar"></div>
         <div className="bar"></div>
         <div className="bar"></div>

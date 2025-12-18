@@ -1,5 +1,3 @@
-import Navbar from "../components/Navbar";
-
 /* Home page structure:
     <Hero>
         Name and Title
@@ -21,13 +19,22 @@ import Navbar from "../components/Navbar";
         Call to action to view resume
 */
 
+{/* Home.jsx */}
+
+import HomeCard from '../components/HomeCard';
+
 export default function Home() {
     return (
         <div>
             <main>
-                <h1>Header 1</h1>
-                <h2>Header 2</h2>
-                <p>Explore some stuff?</p>
+                <div className="home-card-container">
+                    <HomeCard
+                        title="About Me"
+                        description="This is some description"
+                        link=""
+                    />
+                
+                </div>
             </main>
         </div>
     );
