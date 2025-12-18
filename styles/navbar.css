@@ -2,6 +2,7 @@
   /* ============= Navigation Bar Styles ============== */
   nav {
     display: flex;
+    position: sticky;
     justify-content: center;
     align-items: center;
     background-color: #080a0d;
@@ -89,6 +90,15 @@
     padding: 2rem;
   }
   
+  .nav-brand {
+    position: absolute;
+    left: 1rem;
+    font-family: "Monotype Corsiva", cursive;    
+    font-size: 2rem;
+    font-style: italic;
+    margin-right: auto;
+    cursor: default;
+  }
 
 /* === Hamburger Icon Styling === */
 .hamburger {
@@ -107,7 +117,7 @@
 }
 
 /* *********** MOBILE STYLES *********** */
-@media (max-width: 800px) {
+@media (max-width: 950px) {
   .nav-right {
     display: flex;
     flex-direction: column;
@@ -164,8 +174,11 @@
 
   nav {
     justify-content: center;
-    position: relative;
+    position: sticky;
+    top: 0;
     padding: 2rem;
+    z-index: 1;
+    
   }
 
   .githubLink {
@@ -190,6 +203,11 @@
     align-items: center;
     width: 100%;
     gap: 0.4rem;
+  }
+
+  .nav-brand {
+    right: 1rem;
+    left: auto;
   }
   
 

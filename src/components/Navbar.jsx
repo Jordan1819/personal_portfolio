@@ -11,6 +11,10 @@ export default function Navbar() {
 
   return (
     <nav>
+      {/* Brand/Name */}
+      <div className="nav-brand">
+        Jordan Waite
+      </div>
 
       {/* Hamburger Menu */}
       <div className={`hamburger ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
