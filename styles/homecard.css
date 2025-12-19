@@ -2,7 +2,7 @@
 
 .home-card {
     position: relative;
-    background-color: rgba(20, 20, 20, 0.3);
+    background-color: rgba(20, 20, 20, 0.5);
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -10,12 +10,31 @@
 
     border: 2px solid;
     border-image-slice: 1;
-    border-image-source: linear-gradient(45deg, #00f5ff, #1e03ca);
+    border-image-source: linear-gradient(45deg, #d0d2d2, #150674);
     box-shadow: 0 10px 10px rgba(0, 255, 255, 0.2);
     transition: box-shadow 2s ease;
 
     margin-top: 2rem;
+
+    /* Slide-up animation */
+    opacity: 0;
+    transform: translateY(60px);
+    transition:
+        opacity 0.8s ease-out,
+        transform 0.8s ease-out,
+        box-shadow 2s ease;
 }
+
+.home-loaded .home-card {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.home-loaded .home-card:nth-child(1) { transition-delay: 0.15s; }
+.home-loaded .home-card:nth-child(2) { transition-delay: 0.30s; }
+.home-loaded .home-card:nth-child(3) { transition-delay: 0.45s; }
+.home-loaded .home-card:nth-child(4) { transition-delay: 0.6s; }
+
 
 .home-card:hover {
     box-shadow: 0 15px 30px rgba(0, 255, 255, 0.5);
