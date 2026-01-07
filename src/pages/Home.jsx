@@ -33,30 +33,23 @@ export default function Home() {
                             linkDescription="Check out my resume"
                         >
                         <p>
-                        Driven junior developer, lifelong learner, and problem solver.
+                        Driven junior developer, lifelong learner, and problem solver. I enjoy tackling complex problems, learning new technologies, and applying engineering principles to deliver practical, user-focused solutions.
                         </p> 
-                        <p>
-                        Passionate about building impactful, creative software solutions.
-                        </p>
+
                     </HomeCard>
 
                     <HomeCard 
                             title="About Me"
-                            link="/contact"
-                            internal
                             linkDescription="Contact me"
                         >
                         <p>
-                        I enjoy exploring and experimenting with new technologies. Building a well-rounded skillset and deep understanding as a developer is very important to me.
-                        </p>
-                        <p>
-                        Right now, I'm focused on further developing my technical skills and deepening my knowledge through practical experience and personal projects.
+                        I'm focused on further developing my technical skills and deepening my knowledge through practical experience and personal projects. Building a well-rounded skillset and deep understanding as a developer is very important to me.
                         </p>
                         <p>
                         Outside of work, I love spending time with my family, reading epic fantasy novels, and challenging myself as an athlete.
                         </p>
                         <p>
-                        I've made it my life mission to <i>become the strongest version of myself</i> — as a professional, a friend, and someone who inspires others to do the same.
+                        Personal growth is a core part of my life — professionally, as a collaborator, and as someone who strives to inspire those around me to learn and grow. I thrive in environments that value curiosity, initiative, and collaboration.
                         </p>
                     </HomeCard>
 
@@ -68,10 +61,10 @@ export default function Home() {
                             linkDescription="Check out ISU"
                         >
                         <p>
-                        <b>B.S. in Software Engineering - Idaho State University.</b>
+                        <b>B.S. in Software Engineering - Idaho State University</b>
                         </p>
                         <ul className="education-home-card-list">
-                            <li>GPA: 3.88</li>
+                            <li>GPA: 3.86</li>
                             <li>Magna Cum Laude Graduate & Dean's List Member</li>
                             <li>Recipient of the North Wind STEM Scholarship for academic excellence</li>
                             <li>Foundation in OOP, system integration, and pragmatic design</li>
@@ -86,13 +79,23 @@ export default function Home() {
                         >
                         <ul className="skills-home-card-list">
                             <li><i>Languages:</i> Python, JavaScript, HTML, CSS, SQL, C#, Java</li>
-                            <li><i>Tools:</i> Git, GitHub, Linux, AWS, Android Studio, Visual Studio Code, Visual Studio</li>
+                            <li><i>Tools:</i> Git, GitHub, Linux, AWS, Android Studio, Visual Studio Code, WireShark, XAMPP, Visual Studio</li>
                             <li><i>Networking:</i> Analyzed network traffic by inspecting packet & protocol metadata.</li>
                             <li><i>Systems Programming:</i> Low-level memory and OS inspection, modification, and execution tracing.</li>
                             <li><i>Applied Mathematics:</i> Study in engineering physics, calculus, linear algebra, and statistics.</li>
                             <li><i>Professional Skills:</i> Excellent technical writing and collaborative communication skills.</li>
                         
                         </ul>
+                    </HomeCard>
+
+                    <HomeCard
+                            title="Contact Me"
+                            link="https://www.linkedin.com/in/jordan-waite-0a102739b/"
+                            linkDescription="LinkedIn"
+                    >
+                    <p>Please feel free to reach out and connect with me via LinkedIn or email. I'm always open to exploring new opportunities and projects!</p>
+                    <p><b>Email:</b> jtw18199@gmail.com</p>
+                    
                     </HomeCard>
 
                 </div>

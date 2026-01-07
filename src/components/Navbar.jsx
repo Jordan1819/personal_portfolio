@@ -42,7 +42,7 @@ export default function Navbar() {
           GitHub
         </span>
       </a>
-      <Link to="/contact" onClick={() => setMenuOpen(false)}><span>✉ Contact</span></Link>
+      {/* <Link to="/contact" onClick={() => setMenuOpen(false)}><span>✉ Contact</span></Link> */}
       </div>
 
     </nav>

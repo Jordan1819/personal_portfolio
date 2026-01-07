@@ -58,7 +58,8 @@
 
 
 
-.home-card-link {
+.home-card-link,
+.home-card-link:visited {
     color: rgb(66, 220, 220);
     text-decoration: none;
     border-top: none;
