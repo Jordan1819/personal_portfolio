@@ -1,10 +1,4 @@
-/* Root Selector for Top Level Styles */
-:root {
-  --dark-gray: #0f131a;
-  --light-gray: #797979;
-  --bg-gradient-end: #1a1a2e;
-  --bg-gradient-start: #0b0b18;
-}
+
   body {
       margin: 0;
       padding: 0;

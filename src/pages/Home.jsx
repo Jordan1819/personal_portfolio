@@ -28,8 +28,7 @@ export default function Home() {
                             title="Hi, I'm Jordan"
                             image={profileImg}
                             imageAlt="Jordan and his cute goldendoodle dog Sandy."
-                            link="/resume"
-                            internal
+                            link="/Jordan_CV.pdf"       
                             linkDescription="Check out my resume"
                         >
                         <p>
@@ -39,9 +38,7 @@ export default function Home() {
                     </HomeCard>
 
                     <HomeCard 
-                            title="About Me"
-                            linkDescription="Contact me"
-                        >
+                            title="About Me"                        >
                         <p>
                         I'm focused on further developing my technical skills and deepening my knowledge through practical experience and personal projects. Building a well-rounded skillset and deep understanding as a developer is very important to me.
                         </p>
@@ -79,7 +76,7 @@ export default function Home() {
                         >
                         <ul className="skills-home-card-list">
                             <li><i>Languages:</i> Python, JavaScript, HTML, CSS, SQL, C#, Java</li>
-                            <li><i>Tools:</i> Git, GitHub, Linux, AWS, Android Studio, Visual Studio Code, WireShark, XAMPP, Visual Studio</li>
+                            <li><i>Tools:</i> Git, GitHub, Linux, AWS, Android Studio, Visual Studio Code, XAMPP, REST APIs, Visual Studio</li>
                             <li><i>Networking:</i> Analyzed network traffic by inspecting packet & protocol metadata.</li>
                             <li><i>Systems Programming:</i> Low-level memory and OS inspection, modification, and execution tracing.</li>
                             <li><i>Applied Mathematics:</i> Study in engineering physics, calculus, linear algebra, and statistics.</li>

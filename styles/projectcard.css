@@ -1,0 +1,53 @@
+.project-card {
+    position: relative;
+    background-color: rgba(20, 20, 20, 0.5);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: 2px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(45deg, #d0d2d2, #150674);
+    box-shadow: 0 10px 10px rgba(0, 255, 255, 0.2);
+    margin-top: 2rem;
+
+    opacity: 0;
+    transform: translateY(20px);
+    transition: transform 0.8s ease, opacity 0.8s ease, box-shadow 2s ease;
+}
+
+.project-card.slide-up {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.project-card:hover {
+    box-shadow: 0 15px 30px rgba(0, 255, 255, 0.5);
+}
+
+.project-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.project-card-link,
+.project-card-link:visited {
+    color: rgb(66, 220, 220);
+    text-decoration: none;
+    border-top: none;
+    transition: scale .5s ease;
+    margin-top: auto;
+    font-style: italic;
+}
+
+.project-card-link:hover {
+    scale: 1.1;
+}
+
+.project-card-image img{
+    border-radius: 50px;
+}
+
