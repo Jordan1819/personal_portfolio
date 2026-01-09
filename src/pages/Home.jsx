@@ -34,7 +34,6 @@ export default function Home() {
                         <p>
                         Driven junior developer, lifelong learner, and problem solver. I enjoy tackling complex problems, learning new technologies, and applying engineering principles to deliver practical, user-focused solutions.
                         </p> 
-
                     </HomeCard>
 
                     <HomeCard 

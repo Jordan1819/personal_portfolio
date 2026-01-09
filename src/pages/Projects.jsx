@@ -31,7 +31,9 @@ export default function Projects() {
                 link="https://jordan1819.github.io/Pokemon-Team-Generator-Web-App.io/"
                 linkDescription="Check it out here!"
             >
-            <p>This was a fun little web app to build. Mainly just pulling JSON from a web API, but fun nonetheless. </p>
+            <p>This is a fun, responsive web application that randomly generates a Pokémon team for users. 
+            The application was built using JavaScript, HTML, and CSS, and it leverages the PokeAPI to fetch 
+            Pokémon data and generate teams.</p>
             </ProjectCard>
         </div>
     );
