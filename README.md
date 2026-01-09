@@ -1,7 +1,7 @@
 # 🌐 Jordan Waite – Personal Portfolio Website
 
 Welcome to the source code for my personal portfolio website! This site serves as an interactive résumé and central hub for showcasing my software engineering projects, academic experience, and career background.
-
+[Check it out here!](https://jordan1819.github.io/personal_portfolio/)
 ---
 
 ## 🎯 Project Purpose
