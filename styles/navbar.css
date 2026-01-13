@@ -8,7 +8,7 @@
     background-color: #080a0d;
     padding: .5rem 1rem;
     font-size: 1.2rem;
-    border-bottom: 1px solid var(--light-gray);
+    border-bottom: 1px solid lightslategray;
   }
 
   .nav-right {
@@ -59,7 +59,7 @@
   /* Nav Bar Hover Effects */
   .nav-right a:hover {
     background-color: white;
-    color: var(--dark-gray);
+    color: black;
   }
 
   /* White is visible by default */
