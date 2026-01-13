@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../../styles/navbar.css';
 import githubIcon from '../assets/githubIcon.png';
-import githubIconGray from '../assets/githubIconGray';
+import githubIconGray from '../assets/githubIconGray.png';
 
 export default function Navbar() {
 
