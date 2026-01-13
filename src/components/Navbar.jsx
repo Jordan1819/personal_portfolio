@@ -3,6 +3,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../../styles/navbar.css';
+import githubIcon from '../assets/githubIcon.png';
+import githubIconGray from '../assets/githubIconGray.png';
 
 export default function Navbar() {
 
@@ -36,8 +38,8 @@ export default function Navbar() {
       >
         <span className="githubLinkContent">
           <span className="githubIconWrapper">
-            <img src="../githubIcon.png" alt="GitHub" className="githubIcon githubIcon--white" />
-            <img src="../githubIconGray.png" alt="GitHub Dark" className="githubIcon githubIcon--dark" />
+            <img src={githubIcon} alt="GitHub" className="githubIcon githubIcon--white" />
+            <img src={githubIconGray} alt="GitHub Dark" className="githubIcon githubIcon--dark" />
           </span>
           GitHub
         </span>
