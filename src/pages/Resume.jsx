@@ -30,7 +30,7 @@ export default function Resume() {
             >
                 <p>View or download my resume below:</p>
                 <a
-                    href="/Jordan_CV.pdf"
+                    href="../../public/Jordan_CV.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="resume-card-link"
@@ -38,7 +38,7 @@ export default function Resume() {
                     View Resume
                 </a>
                 <a
-                    href="/Jordan_CV.pdf"
+                    href="../../public/Jordan_CV.pdf"
                     download
                     className="resume-card-link"
                 >

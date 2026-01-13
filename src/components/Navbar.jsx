@@ -36,8 +36,8 @@ export default function Navbar() {
       >
         <span className="githubLinkContent">
           <span className="githubIconWrapper">
-            <img src="../githubIcon.png" alt="GitHub" className="githubIcon githubIcon--white" />
-            <img src="../githubIconGray.png" alt="GitHub Dark" className="githubIcon githubIcon--dark" />
+            <img src="../../public/githubIcon.png" alt="GitHub" className="githubIcon githubIcon--white" />
+            <img src="../../public/githubIconGray.png" alt="GitHub Dark" className="githubIcon githubIcon--dark" />
           </span>
           GitHub
         </span>
