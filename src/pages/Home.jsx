@@ -28,7 +28,7 @@ export default function Home() {
                             title="Hi, I'm Jordan"
                             image={profileImg}
                             imageAlt="Jordan and his cute goldendoodle dog Sandy."
-                            link="../../public/Jordan_CV.pdf"       
+                            link="/personal_portfolio/Jordan_CV.pdf"       
                             linkDescription="Check out my resume"
                         >
                         <p>
