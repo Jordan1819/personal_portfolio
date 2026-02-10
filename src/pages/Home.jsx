@@ -75,7 +75,7 @@ export default function Home() {
                         >
                         <ul className="skills-home-card-list">
                             <li><i>Languages:</i> Python, JavaScript, HTML, CSS, SQL, C#, Java</li>
-                            <li><i>Tools:</i> Git, GitHub, Linux, AWS, Android Studio, Visual Studio Code, XAMPP, REST APIs, Visual Studio</li>
+                            <li><i>Tools:</i> Git, GitHub, Linux, AWS, Android Studio, Visual Studio Code, XAMPP, REST APIs, Visual Studio, Docker, Docker Hub</li>
                             <li><i>Networking:</i> Analyzed network traffic by inspecting packet & protocol metadata.</li>
                             <li><i>Systems Programming:</i> Low-level memory and OS inspection, modification, and execution tracing.</li>
                             <li><i>Applied Mathematics:</i> Study in engineering physics, calculus, linear algebra, and statistics.</li>
@@ -97,7 +97,15 @@ export default function Home() {
                     <HomeCard
                         title="About This Site"
                     >
-                    <p>This site serves as a living portfolio where I showcase my web apps, highlight my skills and studies, and share my interests. While GitHub remains my <b>full project portfolio</b>, this site gives me a space that's entirely my own to present projects and ideas the way I envision them.</p>
+                    <p>This site serves as a living portfolio where I showcase some of my web apps/ projects, highlight my skills and studies, and share my interests. While GitHub remains my <b>full project portfolio</b>, this site gives me a space that's entirely my own to present projects and ideas the way I envision them.</p>
+                    </HomeCard>
+
+                    <HomeCard
+                        title="What I'm Currently Working On"
+                        link="https://github.com/Jordan1819/PersonalActivityTrackerAPI"
+                        linkDescription="Check it out here"
+                    >
+                    <p>I'm currently working on building a custom REST API from scratch. It's still very early stage - the idea is to have an activity tracker API, that allows registered users to log activities, eventually providing them with detailed metrics and information as they log tasks.</p>
                     </HomeCard>
 
                 </div>

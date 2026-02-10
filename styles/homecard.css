@@ -35,6 +35,8 @@
 .home-loaded .home-card:nth-child(3) { transition-delay: 0.45s; }
 .home-loaded .home-card:nth-child(4) { transition-delay: 0.6s; }
 .home-loaded .home-card:nth-child(5) { transition-delay: 0.75s; }
+.home-loaded .home-card:nth-child(6) { transition-delay: 0.9s; }
+
 
 
 .home-card:hover {
