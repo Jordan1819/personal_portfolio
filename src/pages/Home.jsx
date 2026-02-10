@@ -94,6 +94,12 @@ export default function Home() {
                     
                     </HomeCard>
 
+                    <HomeCard
+                        title="About This Site"
+                    >
+                    <p>This site serves as a living portfolio where I showcase my web apps, highlight my skills and studies, and share my interests. While GitHub remains my <b>full project portfolio</b>, this site gives me a space that's entirely my own to present projects and ideas the way I envision them.</p>
+                    </HomeCard>
+
                 </div>
             </main>
         </div>
