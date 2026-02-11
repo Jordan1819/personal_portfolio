@@ -101,11 +101,11 @@ export default function Home() {
                     </HomeCard>
 
                     <HomeCard
-                        title="What I'm Currently Working On"
+                        title="Current Projects"
                         link="https://github.com/Jordan1819/PersonalActivityTrackerAPI"
                         linkDescription="Check it out here"
                     >
-                    <p>I'm currently working on building a custom REST API from scratch. It's still very early stage - the idea is to have an activity tracker API, that allows registered users to log activities, eventually providing them with detailed metrics and information as they log tasks.</p>
+                    <p>I'm currently working on building a <b>custom REST API</b> from scratch. It's still very early stage - the idea is to have an activity tracker API, that allows registered users to log activities, eventually providing them with detailed metrics and information as they log tasks.</p>
                     </HomeCard>
 
                 </div>
