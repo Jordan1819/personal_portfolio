@@ -1,9 +1,10 @@
 import '../../styles/resume.css';
 
 const resumeHighlights = [
-    'Software Engineering graduate with a 3.86 GPA',
-    'Hands-on experience with JavaScript, Python, SQL, REST APIs, and Docker',
-    'Strong technical writing, collaboration, and problem-solving habits',
+    'Contract frontend developer with production React experience, responsive UI implementation, and CI/CD-aware debugging.',
+    'Professional AI software engineering contractor experienced in repository-level debugging, validated fixes, prompt engineering optimization, and fail-to-pass regression tests.',
+    'Full-stack project background across Python, Quart, OpenAI API, PHP, JavaScript, SQL, Docker, AWS, and GitHub Actions.',
+    'Software Engineering graduate with a 3.86 GPA, Magna Cum Laude honors, and focused coursework in secure systems, OOP, web development, databases, DSA, and architecture.',
 ];
 
 export default function Resume() {
@@ -13,7 +14,7 @@ export default function Resume() {
                 <p className="eyebrow">Resume</p>
                 <h1>Clear background, practical skills, and steady momentum.</h1>
                 <p>
-                    My resume summarizes the coursework, tools, and project experience I'm bringing into junior software
+                    My resume summarizes the coursework, projects, and professional experience I'm bringing to
                     engineering roles.
                 </p>
 

@@ -10,11 +10,11 @@ const skillGroups = [
     },
     {
         title: 'Tools & Platforms',
-        items: ['Git', 'GitHub', 'Linux', 'AWS', 'Docker', 'REST APIs', 'VS Code'],
+        items: ['Git', 'GitHub', 'GitHub Actions', 'Linux', 'AWS', 'Docker', ' Node.js', 'MySQL', 'PostgreSQL', 'Postman', 'VS Code', 'React', 'Vercel', 'Supabase'],
     },
     {
         title: 'Technical Focus',
-        items: ['OOP', 'System integration', 'Network analysis', 'OS inspection', 'Applied mathematics'],
+        items: ['Object-Oriented Programming', 'System Integration', 'Test-Driven Development', 'Relational Databases', 'API Development', 'Full-Stack Development'],
     },
 ];
 
@@ -24,10 +24,12 @@ export default function Home() {
             <section className="hero-section">
                 <div className="hero-copy">
                     <p className="eyebrow">Junior Software Engineer</p>
-                    <h1>Hi, I'm Jordan Waite.</h1>
+                    <h1>Hi, I'm Jordan.</h1>
                     <p className="hero-summary">
-                        I build practical, user-focused software while sharpening a broad foundation in full-stack development,
-                        systems thinking, and collaborative engineering.
+                        Product-minded full-stack developer with production contract experience, AI software debugging expertise, 
+                        and 6+ years in customer operations. Graduated Magna Cum Laude with a B.S. in Software Engineering. I build 
+                        practical, user-focused applications and bring the communication, ownership, and problem-solving mindset teams 
+                        value in a junior engineer.
                     </p>
                     <div className="hero-actions">
                         <Link to="/projects" className="primary-action">View Projects</Link>
@@ -81,7 +83,7 @@ export default function Home() {
             <section className="skills-section">
                 <div className="section-heading">
                     <p className="eyebrow">Technical Toolkit</p>
-                    <h2>Skills shaped by coursework, projects, and hands-on practice.</h2>
+                    <h2>Skills shaped by experience, projects, and coursework.</h2>
                 </div>
 
                 <div className="skills-grid">
@@ -108,7 +110,7 @@ export default function Home() {
                     <h2>B.S. in Software Engineering</h2>
                     <p className="education-school">Idaho State University</p>
                     <ul>
-                        <li>GPA: 3.86</li>
+                        <li><b>GPA</b>: 3.86</li>
                         <li>Magna Cum Laude graduate and Dean's List member</li>
                         <li>Recipient of the North Wind STEM Scholarship for academic excellence</li>
                         <li>Foundation in OOP, system integration, and pragmatic design</li>

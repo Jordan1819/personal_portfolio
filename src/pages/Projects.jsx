@@ -1,17 +1,41 @@
 import '../../styles/projects.css';
+import ironlogImg from '../../images/ironlog.png';
 import pokeballImg from '../../images/pokeball.png';
-import portfolioOne from '../../images/Portfolio1.png';
-import portfolioTwo from '../../images/Portfolio2.png';
 
-const featuredProject = {
-    title: 'Random Pokemon Team Generator',
-    description:
-        'A responsive web application that generates random Pokemon teams using live data from the PokeAPI. The project focuses on API integration, dynamic rendering, and approachable UI interactions.',
-    image: pokeballImg,
-    imageAlt: 'A Pokeball illustration for the Pokemon team generator project.',
-    link: 'https://jordan1819.github.io/Pokemon-Team-Generator-Web-App.io/',
-    tech: ['JavaScript', 'HTML', 'CSS', 'PokeAPI', 'Responsive UI'],
-};
+const featuredProjects = [
+    {
+        title: 'IronLog',
+        label: 'Featured Project',
+        description:
+            'A minimalist full-stack workout tracker for resistance training. Users can log sessions with multiple exercises and sets, track total volume, review recent history, and visualize progress by exercise.',
+        image: ironlogImg,
+        imageAlt: 'IronLog workout tracker application preview.',
+        imageClassName: 'project-image',
+        link: 'https://iron-log-eta-gilt.vercel.app/auth',
+        tech: ['React 18', 'Vite', 'React Router', 'Recharts', 'Supabase', 'PostgreSQL', 'Vercel'],
+        details: [
+            'Private user accounts with Supabase Auth and Row Level Security.',
+            'Live session volume counter with exercise-name autocomplete.',
+            'Dashboard aggregates volume across sessions and ranks exercises visually.',
+        ],
+    },
+    {
+        title: 'Random Pokemon Team Generator',
+        label: 'Web App',
+        description:
+            'A responsive web application that generates random Pokemon teams using live data from the PokeAPI. The project focuses on API integration, dynamic rendering, and approachable UI interactions.',
+        image: pokeballImg,
+        imageAlt: 'A Pokeball illustration for the Pokemon team generator project.',
+        imageClassName: 'project-image project-image-rounded',
+        link: 'https://jordan1819.github.io/Pokemon-Team-Generator-Web-App.io/',
+        tech: ['JavaScript', 'HTML', 'CSS', 'PokeAPI', 'Responsive UI'],
+        details: [
+            'Fetches live Pokemon data from an external API.',
+            'Formats sselected fetched data to generate randomized teams through a simple browser-based interaction.',
+            'Built with responsive frontend fundamentals and lightweight styling.',
+        ],
+    },
+];
 
 const upcomingProjects = [
     {
@@ -33,41 +57,49 @@ export default function Projects() {
                 <p className="eyebrow">Selected Work</p>
                 <h1>Projects with clear goals, practical constraints, and room to grow.</h1>
                 <p>
-                    This page will expand as I publish more work. For now, it highlights a completed web app and a few
-                    active areas where I'm continuing to build.
+                    This page will expand as I publish more work. For now, it highlights some of my favorite projects, along with a few upcoming initiatives that are in progress or planned for the near future. My GitHub profile remains my full project portfolio.
                 </p>
             </section>
 
-            <section className="featured-project">
-                <div className="project-visual">
-                    <img src={featuredProject.image} alt={featuredProject.imageAlt} />
-                </div>
+            <section className="featured-projects" aria-label="Featured projects">
+                {featuredProjects.map((project) => (
+                    <article className="featured-project" key={project.title}>
+                        <div className="project-visual">
+                            <img src={project.image} alt={project.imageAlt} className={project.imageClassName} />
+                        </div>
 
-                <div className="project-details">
-                    <p className="eyebrow">Featured Project</p>
-                    <h2>{featuredProject.title}</h2>
-                    <p>{featuredProject.description}</p>
+                        <div className="project-details">
+                            <p className="eyebrow">{project.label}</p>
+                            <h2>{project.title}</h2>
+                            <p>{project.description}</p>
 
-                    <div className="tech-stack" aria-label="Project technologies">
-                        {featuredProject.tech.map((item) => (
-                            <span key={item}>{item}</span>
-                        ))}
-                    </div>
+                            <ul className="project-highlights">
+                                {project.details.map((detail) => (
+                                    <li key={detail}>{detail}</li>
+                                ))}
+                            </ul>
 
-                    <a
-                        href={featuredProject.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="primary-action"
-                    >
-                        Launch Project
-                    </a>
-                </div>
+                            <div className="tech-stack" aria-label={`${project.title} technologies`}>
+                                {project.tech.map((item) => (
+                                    <span key={item}>{item}</span>
+                                ))}
+                            </div>
+
+                            <a
+                                href={project.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="primary-action"
+                            >
+                                Launch Project
+                            </a>
+                        </div>
+                    </article>
+                ))}
             </section>
 
             <section className="project-gallery" aria-label="Portfolio screenshots">
-                <img src={portfolioOne} alt="Portfolio project screenshot." />
-                <img src={portfolioTwo} alt="Portfolio project screenshot variation." />
+
             </section>
 
             <section className="upcoming-section">
