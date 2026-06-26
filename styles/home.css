@@ -1,12 +1,248 @@
-.home-card-container {
+.home-page {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 3rem;
-    margin-top: 2rem;
-    max-width: 1280px;
+    gap: 5rem;
     margin: 0 auto;
+    max-width: 1180px;
+    padding: 5rem 1.25rem 4rem;
 }
 
-li {
-    margin-top: 5px;
+.hero-section {
+    align-items: center;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: minmax(0, 1.12fr) minmax(280px, 0.88fr);
+    min-height: calc(100vh - 9rem);
+}
+
+.hero-copy {
+    animation: rise-in 620ms ease both;
+}
+
+.hero-copy h1 {
+    margin-bottom: 1.5rem;
+}
+
+.hero-summary {
+    color: var(--muted);
+    font-size: clamp(1.1rem, 2vw, 1.35rem);
+    max-width: 660px;
+}
+
+.hero-actions,
+.contact-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.85rem;
+    margin-top: 2rem;
+}
+
+.hero-portrait {
+    aspect-ratio: 4 / 5;
+    background-color: var(--soft);
+    border: 1px solid var(--line);
+    border-radius: 1.5rem;
+    box-shadow: 0 2rem 5rem rgba(23, 32, 42, 0.16);
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-portrait::after {
+    border: 1px solid rgba(255, 255, 255, 0.64);
+    border-radius: 1rem;
+    content: "";
+    inset: 1rem;
+    pointer-events: none;
+    position: absolute;
+}
+
+.hero-portrait img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.intro-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1.15fr 0.85fr;
+}
+
+.intro-panel,
+.skill-card,
+.resume-panel,
+.upcoming-card {
+    background: rgba(255, 255, 255, 0.62);
+    border: 1px solid var(--line);
+    border-radius: 1rem;
+    box-shadow: 0 1.25rem 3rem rgba(23, 32, 42, 0.08);
+}
+
+.intro-panel {
+    padding: clamp(1.5rem, 4vw, 3rem);
+}
+
+.intro-panel p {
+    color: var(--muted);
+}
+
+.panel-label {
+    color: var(--rust);
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.accent-panel {
+    background-color: #e8f0ed;
+}
+
+.skills-section {
+    display: grid;
+    gap: 2rem;
+}
+
+.skills-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.skill-card {
+    padding: 1.5rem;
+}
+
+.skill-card h3 {
+    color: var(--navy);
+    margin-bottom: 1rem;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+}
+
+.skill-list span {
+    background-color: #ffffff;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    color: var(--muted);
+    font-size: 0.92rem;
+    font-weight: 700;
+    padding: 0.42rem 0.68rem;
+}
+
+.education-section {
+    align-items: stretch;
+    background-color: var(--ink);
+    border-radius: 1.25rem;
+    color: #ffffff;
+    display: grid;
+    gap: 0;
+    grid-template-columns: minmax(260px, 0.85fr) minmax(0, 1.15fr);
+    overflow: hidden;
+}
+
+.education-image img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.education-copy {
+    padding: clamp(1.5rem, 5vw, 3.5rem);
+}
+
+.education-copy .eyebrow,
+.education-copy .inline-link {
+    color: #80d4cb;
+}
+
+.education-school {
+    color: #cbd7df;
+    font-size: 1.15rem;
+    font-weight: 800;
+}
+
+.education-copy ul {
+    color: #d9e0e4;
+    margin: 1.5rem 0;
+    padding-left: 1.25rem;
+}
+
+.education-copy li {
+    margin-top: 0.45rem;
+}
+
+.contact-section {
+    align-items: center;
+    border-bottom: 1px solid var(--line);
+    border-top: 1px solid var(--line);
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: minmax(0, 1fr) auto;
+    padding: 3rem 0;
+}
+
+.contact-section p {
+    color: var(--muted);
+    max-width: 720px;
+}
+
+@keyframes rise-in {
+    from {
+        opacity: 0;
+        transform: translateY(22px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 900px) {
+    .home-page {
+        gap: 3.5rem;
+        padding-top: 3rem;
+    }
+
+    .hero-section,
+    .intro-grid,
+    .education-section,
+    .contact-section {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-section {
+        min-height: auto;
+    }
+
+    .hero-portrait {
+        max-height: 640px;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-section {
+        align-items: start;
+    }
+}
+
+@media (max-width: 640px) {
+    .home-page {
+        padding-inline: 1rem;
+    }
+
+    .hero-actions,
+    .contact-actions {
+        flex-direction: column;
+    }
 }

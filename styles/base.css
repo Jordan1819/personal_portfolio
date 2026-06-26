@@ -1,11 +1,135 @@
+:root {
+    color: #17202a;
+    background-color: #f6f4ee;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    --ink: #17202a;
+    --muted: #5b6470;
+    --paper: #fbfaf7;
+    --soft: #eee9dd;
+    --line: rgba(23, 32, 42, 0.14);
+    --accent: #1c6f67;
+    --accent-dark: #104c47;
+    --rust: #a7502f;
+    --navy: #1f3557;
+}
 
-  body {
-      margin: 0;
-      padding: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      font-size: 1.1rem;
-      background: linear-gradient(135deg, #000000, #0f0c29, #211d4f, #000000);      
-      color: #ffffff;
-      min-height: 100vh;
+* {
+    box-sizing: border-box;
+}
 
-  }
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at top left, rgba(28, 111, 103, 0.12), transparent 34rem),
+        linear-gradient(180deg, #f7f3ea 0%, #fbfaf7 42%, #edf3f1 100%);
+    color: var(--ink);
+    font-size: 1rem;
+    line-height: 1.65;
+}
+
+a {
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.08;
+    letter-spacing: 0;
+}
+
+h1 {
+    font-size: clamp(2.7rem, 6vw, 5.9rem);
+    max-width: 11ch;
+}
+
+h2 {
+    font-size: clamp(1.8rem, 3.5vw, 3rem);
+}
+
+h3 {
+    font-size: 1.08rem;
+}
+
+.eyebrow {
+    color: var(--accent-dark);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+}
+
+.primary-action,
+.secondary-action {
+    align-items: center;
+    border-radius: 999px;
+    display: inline-flex;
+    font-weight: 800;
+    justify-content: center;
+    min-height: 3rem;
+    padding: 0.8rem 1.2rem;
+    text-decoration: none;
+    transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
+}
+
+.primary-action {
+    background-color: var(--ink);
+    color: #ffffff;
+    box-shadow: 0 1rem 2.5rem rgba(23, 32, 42, 0.18);
+}
+
+.secondary-action {
+    background-color: rgba(255, 255, 255, 0.58);
+    border: 1px solid var(--line);
+    color: var(--ink);
+}
+
+.primary-action:hover,
+.secondary-action:hover {
+    transform: translateY(-2px);
+}
+
+.inline-link {
+    color: var(--accent-dark);
+    display: inline-flex;
+    font-weight: 800;
+    text-decoration-color: rgba(28, 111, 103, 0.34);
+    text-decoration-thickness: 0.12rem;
+    text-underline-offset: 0.28rem;
+}
+
+.section-heading {
+    max-width: 760px;
+}
+
+@media (max-width: 640px) {
+    h1 {
+        font-size: 3rem;
+        max-width: 100%;
+    }
+
+    .primary-action,
+    .secondary-action {
+        width: 100%;
+    }
+}
